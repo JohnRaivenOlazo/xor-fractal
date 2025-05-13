@@ -1,13 +1,13 @@
-import React, { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import { View, ScrollView, Pressable, useWindowDimensions, Text } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
 import { BlurView } from 'expo-blur';
 import { GestureDetector, Gesture } from 'react-native-gesture-handler';
-import Animated, { 
-  useAnimatedStyle, 
-  withSpring, 
+import Animated, {
+  useAnimatedStyle,
+  withSpring,
   FadeIn,
   SlideInDown,
   useSharedValue,
@@ -38,7 +38,7 @@ const AnimatedCell = ({ value, onPress }: AnimatedCellProps) => {
       className="rounded-lg overflow-hidden"
       style={animatedStyle}
     >
-      <BlurView 
+      <BlurView
         intensity={value ? 60 : 10}
         tint="dark"
         style={{
@@ -90,7 +90,7 @@ export default function HomeScreen() {
         setIsRunning(false);
         return prevCells;
       }
-      
+
       const lastRow = prevCells[prevCells.length - 1];
       const newRow = step(lastRow);
       return [...prevCells, newRow];
@@ -106,7 +106,7 @@ export default function HomeScreen() {
         setIsRunning(false);
       }
     }
-    
+
     return () => {
       if (timerRef.current !== null) {
         clearInterval(timerRef.current);
@@ -127,9 +127,9 @@ export default function HomeScreen() {
 
   const handleCellPress = async (rowIndex: number, cellIndex: number) => {
     if (rowIndex !== 0 || isRunning) return;
-    
+
     await Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
-    
+
     setCells(prev => {
       const newFirstRow = [...prev[0]];
       newFirstRow[cellIndex] = newFirstRow[cellIndex] ? 0 : 1;
@@ -161,7 +161,8 @@ export default function HomeScreen() {
   const contentWidth = (CELL_SIZE + (CELL_MARGIN * 2)) * size;
   const shouldScroll = contentWidth > windowWidth;
 
-  return (    <SafeAreaView className="flex-1 bg-[#181824]">
+  return (
+    <SafeAreaView className="flex-1 bg-[#181824]">
       <View className="flex-1 bg-transparent">
         <StatusBar style="light" />
         <BlurView intensity={40} tint="dark" className="mt-[8%] mx-[5%] py-4 px-5 items-center rounded-[20px] shadow-lg bg-[rgba(24,24,36,0.7)] border-b-0">
@@ -169,12 +170,14 @@ export default function HomeScreen() {
             <Text className="text-[28px] font-bold text-white tracking-wider">Rule 90</Text>
             <Text className="text-[14px] text-[#b0b0c3] font-normal mt-0.5">Elementary Cellular Automaton</Text>
           </Animated.View>
-        </BlurView>        <Animated.View 
-          entering={SlideInDown.delay(300).springify()} 
+        </BlurView>
+        <Animated.View
+          entering={SlideInDown.delay(300).springify()}
           className="p-4 bg-transparent mb-2"
-        >          <View className="flex-col gap-3">
+        >
+          <View className="flex-col gap-3">
             <View className="flex-row justify-between gap-2">
-              <AnimatedPressable 
+              <AnimatedPressable
                 className={`flex-1 rounded-lg px-4 py-3 items-center ${isRunning ? 'bg-[#e94560]' : 'bg-[#3b82f6]'}`}
                 onPress={() => {
                   Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
@@ -185,7 +188,7 @@ export default function HomeScreen() {
                   {isRunning ? 'Stop' : 'Start'}
                 </Text>
               </AnimatedPressable>
-              <AnimatedPressable 
+              <AnimatedPressable
                 className="flex-1 rounded-lg px-4 py-3 items-center bg-[#232336]"
                 onPress={() => {
                   Haptics.notificationAsync(Haptics.NotificationFeedbackType.Success);
@@ -196,11 +199,11 @@ export default function HomeScreen() {
                 <Text className="text-[#b0b0c3] font-semibold text-[15px]">Reset</Text>
               </AnimatedPressable>
             </View>
-            <BlurView intensity={30} tint="dark" className="rounded-lg bg-[rgba(24,24,36,0.7)] border-0 p-3"> 
+            <BlurView intensity={30} tint="dark" className="rounded-lg bg-[rgba(24,24,36,0.7)] border-0 p-3">
               <View className="flex-row items-center justify-between">
                 <Text className="text-[#b0b0c3] text-[13px]">Grid Size</Text>
-                <View className="flex-row items-center gap-3 bg-transparent"> 
-                  <Pressable 
+                <View className="flex-row items-center gap-3 bg-transparent">
+                  <Pressable
                     className="w-8 h-8 items-center justify-center bg-[#232336] rounded-md"
                     onPress={() => {
                       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -210,7 +213,7 @@ export default function HomeScreen() {
                     <Text className="text-[#b0b0c3] text-lg">−</Text>
                   </Pressable>
                   <Text className="text-white font-semibold text-base min-w-[24px] text-center">{size}</Text>
-                  <Pressable 
+                  <Pressable
                     className="w-8 h-8 items-center justify-center bg-[#232336] rounded-md"
                     onPress={() => {
                       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
@@ -223,9 +226,10 @@ export default function HomeScreen() {
               </View>
             </BlurView>
           </View>
-        </Animated.View>        <ScrollView 
+        </Animated.View>
+        <ScrollView
           className="bg-transparent"
-          contentContainerStyle={{ 
+          contentContainerStyle={{
             paddingHorizontal: calculatedPadding,
             paddingVertical: 20,
           }}
@@ -233,7 +237,7 @@ export default function HomeScreen() {
           showsHorizontalScrollIndicator={false}
         >
           <GestureDetector gesture={pinchGesture}>
-            <Animated.View 
+            <Animated.View
               style={[
                 shouldScroll && { paddingRight: calculatedPadding },
                 animatedStyle
@@ -241,7 +245,7 @@ export default function HomeScreen() {
               className="bg-transparent gap-[2px] flex-col"
             >
               {cells.map((row, rowIndex) => (
-                <View key={rowIndex} className="flex-row gap-[2px]"> 
+                <View key={rowIndex} className="flex-row gap-[2px]">
                   {row.map((cell, cellIndex) => (
                     <AnimatedCell
                       key={`${rowIndex}-${cellIndex}`}
@@ -255,7 +259,7 @@ export default function HomeScreen() {
           </GestureDetector>
         </ScrollView>
 
-        <BlurView intensity={20} tint="dark" className="bg-[rgba(24,24,36,0.7)] border-t-0 mt-2 py-4"> 
+        <BlurView intensity={20} tint="dark" className="bg-[rgba(24,24,36,0.7)] border-t-0 mt-2 py-4">
           <Text className="text-[#b0b0c3] text-[13px] text-center tracking-wider">
             Tap first row cells to toggle bits
           </Text>
