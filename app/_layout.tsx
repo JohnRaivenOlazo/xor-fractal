@@ -1,4 +1,3 @@
-import 'react-native-gesture-handler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { Tabs } from 'expo-router';
 import { Platform, Image, Animated } from 'react-native';

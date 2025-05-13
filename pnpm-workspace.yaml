@@ -1,5 +1,1 @@
 nodeLinker: hoisted
-packages:
-  - app
-  - assets
-  - styles
