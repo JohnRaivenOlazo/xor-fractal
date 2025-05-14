@@ -13,7 +13,7 @@ This is my mobile application for the DAA (Design and Analysis of Algorithms) co
 
 ---
 
-## Getting Started
+## Dev
 
 1. **Install dependencies**
 
@@ -35,17 +35,9 @@ This is my mobile application for the DAA (Design and Analysis of Algorithms) co
 
 ---
 
-## How to Develop
+## How's
 
 All the main code lives in the `app/` directory. Routing is file-based, so just add or edit files there to create new screens or features. Styles are in `globals.css` and use Tailwind classes.
-
-If you want to start fresh, you can run:
-
-```bash
-npm run reset-project
-```
-
-This will move the starter code to `app-example/` and give you a blank slate in `app/`.
 
 ---
 
