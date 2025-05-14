@@ -1,4 +1,4 @@
-# xor-fractal: My DAA Mobile App 📱
+# xor-fractal: Mobile App 📱
 
 This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone.
 
