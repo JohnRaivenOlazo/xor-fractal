@@ -4,6 +4,14 @@ This is my mobile application for the DAA (Design and Analysis of Algorithms) co
 
 ---
 
+## 📦 Download
+
+You can download the latest APK (Android build) here:
+
+[Download APK](https://expo.dev/accounts/johnraivenolazo/projects/xor-fractal/builds/83fbda92-fe56-4f5f-a95a-c77d0f173a0f)
+
+---
+
 ## 🚀 Tech Stack
 
 - <img src="https://img.icons8.com/color/48/000000/expo.png" width="20"/> **Expo** – Makes React Native development easier and faster.
@@ -35,7 +43,7 @@ This is my mobile application for the DAA (Design and Analysis of Algorithms) co
 
 ---
 
-## How's
+## Main
 
 All the main code lives in the `app/` directory. Routing is file-based, so just add or edit files there to create new screens or features. Styles are in `globals.css` and use Tailwind classes.
 
