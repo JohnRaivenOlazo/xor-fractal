@@ -1,6 +1,6 @@
 # xor-fractal: My DAA Mobile App 📱
 
-Hey there! This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone. If you’re curious about how algorithms work or just want to play around with some fractals, you’re in the right place.
+This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone.
 
 ---
 
@@ -9,7 +9,7 @@ Hey there! This is my mobile application for the DAA (Design and Analysis of Alg
 - <img src="https://img.icons8.com/color/48/000000/expo.png" width="20"/> **Expo** – Makes React Native development easier and faster.
 - <img src="https://img.icons8.com/color/48/000000/react-native.png" width="20"/> **React Native** – The framework for building the app, so it works on both Android and iOS.
 - <img src="https://img.icons8.com/color/48/000000/typescript.png" width="20"/> **TypeScript** – For type safety and catching bugs early.
-- <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" width="20"/> **Nativewind** – For styling the UI quickly and consistently.
+- <img src="https://img.icons8.com/color/48/000000/tailwindcss.png" width="20"/> **Nativewind** – For styling UI.
 
 ---
 
