@@ -14,6 +14,8 @@ You can download the latest APK (Android build) here:
 
 [Download APK](https://expo.dev/accounts/johnraivenolazo/projects/xor-fractal/builds/83fbda92-fe56-4f5f-a95a-c77d0f173a0f)
 
+Apk Direct Download (Mediafire): https://www.mediafire.com/file/162bhuxdgmfo4z9/xor_fractal.apk/file
+
 ---
 
 ## 🚀 Tech Stack
