@@ -1,10 +1,15 @@
 # xor-fractal: Mobile App 📱
 
-This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone.
+This is my mobile application for the DAA (Design and Analysis of Algorithms) course. It visualizes Rule 90 (an elementary cellular automaton) and lets you interact with the fractal grid. The app is designed to be simple, hands-on, and a bit fun for anyone interested in algorithms.
 
-
-![34983dc6-9529-40e0-aa8b-ce4487efec8e](https://github.com/user-attachments/assets/caa1796c-9b6f-4d9f-a9f7-b954820587a9)
-![a99d1cca-f2ef-454c-b931-df3c0f6fac16](https://github.com/user-attachments/assets/cc050ab5-4207-4c91-83fc-2a699af6e51c)
+<div align="center" style="display: flex; flex-direction: row; gap: 12px; justify-content: center; align-items: flex-start;">
+  <div style="flex: 1; min-width: 120px; max-width: 180px;">
+    <img src="https://github.com/user-attachments/assets/caa1796c-9b6f-4d9f-a9f7-b954820587a9" alt="App screenshot 1" width="160"/>
+  </div>
+  <div style="flex: 1; min-width: 120px; max-width: 180px;">
+    <img src="https://github.com/user-attachments/assets/cc050ab5-4207-4c91-83fc-2a699af6e51c" alt="App screenshot 2" width="160"/>
+  </div>
+</div>
 
 ---
 
