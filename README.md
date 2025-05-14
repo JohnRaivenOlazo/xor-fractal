@@ -2,14 +2,9 @@
 
 This is my mobile application for the DAA (Design and Analysis of Algorithms) course. It visualizes Rule 90 (an elementary cellular automaton) and lets you interact with the fractal grid. The app is designed to be simple, hands-on, and a bit fun for anyone interested in algorithms.
 
-<div align="center" style="display: flex; flex-direction: row; gap: 12px; justify-content: center; align-items: flex-start;">
-  <div style="flex: 1; min-width: 120px; max-width: 180px;">
-    <img src="https://github.com/user-attachments/assets/caa1796c-9b6f-4d9f-a9f7-b954820587a9" alt="App screenshot 1" width="160"/>
-  </div>
-  <div style="flex: 1; min-width: 120px; max-width: 180px;">
-    <img src="https://github.com/user-attachments/assets/cc050ab5-4207-4c91-83fc-2a699af6e51c" alt="App screenshot 2" width="160"/>
-  </div>
-</div>
+| ![App screenshot 1](https://github.com/user-attachments/assets/caa1796c-9b6f-4d9f-a9f7-b954820587a9?raw=true#gh-light-mode-only) | ![App screenshot 2](https://github.com/user-attachments/assets/cc050ab5-4207-4c91-83fc-2a699af6e51c?raw=true#gh-light-mode-only) |
+|:--:|:--:|
+| <sub>Splash screen</sub> | <sub>Fractal grid in action</sub> |
 
 ---
 
