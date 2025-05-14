@@ -2,6 +2,10 @@
 
 This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone.
 
+
+![34983dc6-9529-40e0-aa8b-ce4487efec8e](https://github.com/user-attachments/assets/caa1796c-9b6f-4d9f-a9f7-b954820587a9)
+![a99d1cca-f2ef-454c-b931-df3c0f6fac16](https://github.com/user-attachments/assets/cc050ab5-4207-4c91-83fc-2a699af6e51c)
+
 ---
 
 ## 📦 Download
