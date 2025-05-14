@@ -1,50 +1,69 @@
-# Welcome to your Expo app 👋
+# xor-fractal: My DAA Mobile App 📱
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Hey there! This is my mobile application for the DAA (Design and Analysis of Algorithms) course. I built this app to help visualize and explore algorithmic concepts in a hands-on way, right from your phone. If you’re curious about how algorithms work or just want to play around with some fractals, you’re in the right place.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Tech Stack
+
+- <img src="https://img.icons8.com/color/48/000000/expo.png" width="20"/> **Expo** – Makes React Native development easier and faster.
+- <img src="https://img.icons8.com/color/48/000000/react-native.png" width="20"/> **React Native** – The framework for building the app, so it works on both Android and iOS.
+- <img src="https://img.icons8.com/color/48/000000/typescript.png" width="20"/> **TypeScript** – For type safety and catching bugs early.
+- <img src="https://img.icons8.com/color/48/000000/nativewind.png" width="20"/> **Nativewind** – For styling the UI quickly and consistently.
+
+---
+
+## Getting Started
+
+1. **Install dependencies**
 
    ```bash
    npm install
    ```
 
-2. Start the app
+2. **Start the app**
 
    ```bash
-    npx expo start
+   npx expo start
    ```
 
-In the output, you'll find options to open the app in a
+   This will open up a local server. You can scan the QR code with your phone (using the Expo Go app) or run it in an emulator/simulator if you have one set up.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   - [Android emulator setup](https://docs.expo.dev/workflow/android-studio-emulator/)
+   - [iOS simulator setup](https://docs.expo.dev/workflow/ios-simulator/)
+   - [Expo Go app](https://expo.dev/go) (for quick testing on your device)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+---
 
-## Get a fresh project
+## How to Develop
 
-When you're ready, run:
+All the main code lives in the `app/` directory. Routing is file-based, so just add or edit files there to create new screens or features. Styles are in `globals.css` and use Tailwind classes.
+
+If you want to start fresh, you can run:
 
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This will move the starter code to `app-example/` and give you a blank slate in `app/`.
 
-## Learn more
+---
 
-To learn more about developing your project with Expo, look at the following resources:
+## Why This App?
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+I made this for my DAA course project, but also because I wanted a fun way to see algorithms in action. The main feature is a fractal visualizer, but I plan to add more algorithm demos as I go. If you have ideas or want to contribute, feel free to open an issue or PR.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## Resources
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- [Expo Docs](https://docs.expo.dev/)
+- [React Native Docs](https://reactnative.dev/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [NativeWind](https://www.nativewind.dev/)
+
+---
+
+## Contact
+
+If you have questions, suggestions, or just want to chat about algorithms, feel free to reach out!
