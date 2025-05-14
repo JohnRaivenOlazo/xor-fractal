@@ -1,4 +1,4 @@
-# xor-fractal: Mobile App 📱
+# xor-fractal: Mobile App with React Native 📱
 
 This is my mobile application for the DAA (Design and Analysis of Algorithms) course. It visualizes Rule 90 (an elementary cellular automaton) and lets you interact with the fractal grid. The app is designed to be simple, hands-on, and a bit fun for anyone interested in algorithms.
 
